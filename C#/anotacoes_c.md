@@ -17,3 +17,13 @@
     - O método sempre será seguido de parênteses.
     - A classe e o método são separados por um ponto (.). O ponto é a forma como você "navega da classe para um dos métodos dela.
     - O ; informa ao compilador que terminamos de inserir o comando. 
+
+# Valor Literal
+    - É um valor embutido em código que nunca é alterado.
+    - Apenas um único caractere alfanumérico impresso na tela, poderíamoso criar um literal char circundando um caractere alfanumérico com aspas simples.
+    - Assim como o tipo de dados String, você usa char sempre que tem um único caractere alfanumérico para apresentação (não para cálculo).
+        O termo char é a abreviaão de caractere em inglês.
+    - Número inteiro = int
+    - Sufixo Literal - A letra m = informa ao compilador que você deseja trabalhar com um valor do tipo decimal. Ex: "Console.WriteLine(12.3m);". O m pode ser maiúsculo ou minúsculo;
+    - Literal bool - bool - true ou false
+    - string e char são usados para "apresentação, não cálculo". Se precisar executar uma operação matemática em valores numéricos, você deverá usar um int ou decimal.
