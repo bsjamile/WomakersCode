@@ -27,3 +27,16 @@
     - Sufixo Literal - A letra m = informa ao compilador que você deseja trabalhar com um valor do tipo decimal. Ex: "Console.WriteLine(12.3m);". O m pode ser maiúsculo ou minúsculo;
     - Literal bool - bool - true ou false
     - string e char são usados para "apresentação, não cálculo". Se precisar executar uma operação matemática em valores numéricos, você deverá usar um int ou decimal.
+
+# Variável
+- Para usar uma variável, você precisa primeiro declará-la;
+- Para criar uma variável primeiro deve-se declarar o tipo de dados da variável e, em seguida, dar um nome a ela. Ex: "string firstName;"
+    - Os nomes das variáveis diferenciam maiúsculas de minúsculas, ou seja, string Value; =! string value;
+    - Os nomes das varipaveis devem usar minúsculas concatenadas. Ex: string thisIsCamelCase;
+    - O nome da variável deve ser uma ou mais palavras inteiras unidas. Não use contrações!
+    - O nome da variável não deve ncluir o tipo de dados da variável.
+- O C# foi projetado para impor tipos, o que significa que você não pode atribuir um valor de um tipo de dados a uma variável declarada com a finalidade de conter um tipo de dados diferente.
+    - Recuperar um valor de uma variável = obter a variável = operação "get".
+    - É possível reutilizar e reatribuir a variável quants vezes desejar. 
+    - É preciso definir uma variável como um valor antes de poder obter o valor da variável.
+    - Variáveis locais do tipo implícito - é criado usando a palavr-chave var - faz com que o C# infira o tipo de dados daquela variável. Ex: var message = "Hello world!";
