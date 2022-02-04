@@ -60,3 +60,7 @@
 - Combinar dois ou mais valores em um novo valor.
 - Operador de concatenação de cadeia de caracteres = +.
 - Evitar usar variáveis intermediárias (uma variável que resulte da soma de outras 2 ou maisvariáveis).
+
+# Interpolação
+- Combina vários valores em uma única cadeia de caracteres literal usando um "modelo" e uma ou mais expressões de interpolação.
+    Para se tornar um modelo, a cadeia de caracteres literal quando é prefixado pelo caractere $.
