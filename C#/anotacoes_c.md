@@ -40,3 +40,23 @@
     - É possível reutilizar e reatribuir a variável quants vezes desejar. 
     - É preciso definir uma variável como um valor antes de poder obter o valor da variável.
     - Variáveis locais do tipo implícito - é criado usando a palavr-chave var - faz com que o C# infira o tipo de dados daquela variável. Ex: var message = "Hello world!";
+# Sequência de Escape
+    - \n adicionará uma nova linha;
+    - \t adicionará uma guia;
+    - \" para colocar entre aspas. Ex: \"World\"  
+    - Se quiser digitar um caminho dá erro porque o C# resenva a barra invertida para sequências de escape. Ex de erro: Console.WriteLine("c:\source\repos");. \s e \r é uma sequência de escape. Ex dsem erro: Console.WriteLine("c:\\source\\repos");
+    - A diretiva @ antes da cadeia de caracteres literal faz com que não seja necessário usar as \\
+        Ex: Console.WriteLine(@"c:\source\repos");
+    - \u converte um código de quatro caracteres representando algum caractere em unicode (UTF-16), por exemplo.
+--------------------
+### Recapitulando:
+- Use as sequências de escape de caractere quando precisar inserir um caractere especial em uma cadeia de caracteres literal, como uma tabulação \t, uma nova linha \n ou uma aspa dupla \".
+- Use um caractere de escape para a barra invertida \\ quando precisar usar uma barra invertida em todos os outros cenários.
+- Use a diretiva @ para criar um literal de cadeia de caracteres que mantenha toda a formatação de espaço em branco e caracteres de barra invertida em uma cadeia de caracteres.
+- Use o \u mais um código de quatro caracteres para representar caracteres Unicode (UTF-16) em uma cadeia de caracteres.
+- Os caracteres Unicode podem não ser impressos corretamente dependendo do aplicativo.
+-----------------------
+# Concatenação
+- Combinar dois ou mais valores em um novo valor.
+- Operador de concatenação de cadeia de caracteres = +.
+- Evitar usar variáveis intermediárias (uma variável que resulte da soma de outras 2 ou maisvariáveis).

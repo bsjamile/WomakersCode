@@ -106,3 +106,44 @@ Console.Write(numberInbox);
 Console.Write(" messages inbox. The temperature is ");
 Console.Write(temperature);
 Console.Write(" celsius.");
+
+Console.WriteLine("Hello\nWorld!");
+// \n adicionará uma nova linha
+
+Console.WriteLine("Hello\tWorld!");
+// \t adicionará um espaço em branco
+
+Console.WriteLine("Hello \"World\"!");
+// \" para colocar entre aspas
+
+// Console.WriteLine("c:\source\repos"); dá erro porque a \ é reservada para sequências de escape. \s e \r são sequências de escape
+// Então, quando precisarmos colocar um nome de um local ou algo do tipo, precisamos adicionar uma segunda \. Ex:
+Console.WriteLine("c:\\source\\repos");
+
+Console.Write("Generating invoices for cusromer \"ABC Corp\"...\n");
+Console.Write("Invoice:2021\t\tComplete!\n");
+Console.WriteLine("Invoice 1022\t\tComplete!");
+Console.WriteLine("Output Directory:\t");
+Console.WriteLine(@"c:\invoices");
+
+// as sequeências de escape: \t - espaço em braanco ; \n pula uma linha ; \" Jmile \" coloca aspas em Jmile
+// o @ antes de tudo faz com que não seja necessário o uso das duas barras (\\)
+Console.WriteLine(@"c:\source\repos
+    (this is where your code goes)");
+Console.WriteLine(@"c:\invoices");
+
+// Kon'nichiwa World
+Console.WriteLine("\u3053\u3093\u306B\u306F World!");
+
+// To generate Japanese invoices:
+// Nihon no seikyu-sho o seisei suru ni wa:
+Console.Write("\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
+Console.WriteLine(@"c:\invoices\app.exe -j");
+
+// Concatenar Valores
+// operador de concatenação = +
+message = "Hello " + firstName;
+Console.WriteLine(message);
+
+string getting = "Hello";
+Console.WriteLine(getting + " " + firstName + "!");
