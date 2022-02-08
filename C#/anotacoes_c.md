@@ -109,7 +109,7 @@
 
 - IntelliSense - fornece dicas e informações de referência breves em uma janela pop-up sob seu cursor enqunto você insere o código. (autopreenchimento);
 
-# IF
+# IF, ELSE IF AND ELSE
 
 - A expressão booliana é entre parênteses () --- True or False
 - Um bloco de código é definido por chaves { }
@@ -119,4 +119,7 @@
             Console.WriteLine("You Win!");
         }
 
-        
+# MATRIZ
+
+- Uma matriz é uma sequência de elementos de dados individuais que pode ser acessada por meio de um único nome de variável
+    Os elementos de uma matriz são como qualquer outro valor de variável, de modo que você pode atribuir, recuperar e reatribuir um valor a cada elemento da matriz.

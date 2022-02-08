@@ -299,28 +299,45 @@ Console.WriteLine(largerValue);
 
 Random naice = new Random();
 
-int rooll10 = naice.Next(1,7);
-int rooll11 = naice.Next(1,7);
-int rooll12 = naice.Next(1,7);
+int rooll10 = naice.Next(1, 7);
+int rooll11 = naice.Next(1, 7);
+int rooll12 = naice.Next(1, 7);
 
 int total = rooll10 + rooll11 + rooll12;
 
 Console.WriteLine($"Naice rooll: {rooll10} + {rooll11} + {rooll12} = {total}");
 
 if ((rooll10 == rooll11) || (rooll11 == rooll12) || (rooll12 == rooll10))
+//condição composta ; || operadores lógicos or/ou
 {
-    Console.WriteLine("You rolled doubles! +2 bonus to total!");
-    total += 2;
+    if ((rooll10 == rooll11) && (rooll12 == rooll10))
+    // condição && = e ; todas as condições precisam ser verdadeiras para a condição booliana = True;
+    {
+        Console.WriteLine("You rolled triples! +6 bonus to total");
+        total += 6;
+    }
+    else
+    {
+        Console.WriteLine("You rolled doubles! +2 bonus to total!");
+        total += 2;
+    }
 }
 
-if (total > 14)
+if (total >= 16)
 {
-    Console.WriteLine("You Win!");
+    Console.WriteLine($"You Win a new car! O total foi {total}!");
 }
-
-if (total < 15)
+else if (total >= 10)
 {
-    Console.WriteLine("Sorry, you lose.");
+    Console.WriteLine($"You Win a new laptop. O total foi {total}");
+}
+else if (total == 7)
+{
+    Console.WriteLine($"You Win a trip for two! O total foi {total}!");
+}
+else
+{
+    Console.WriteLine($"You Win a kitten! O total foi de {total}");
 }
 
 message = "The quick brown fox jumps over the lazy dog.";
@@ -332,7 +349,62 @@ if (message.Contains("fox"))
     Console.WriteLine("What does the fox say?");
 }
 
+Random random = new Random();
+int daysUntilExpration = random.Next(12);
+int discountPercentage = 0;
 
 
+if (daysUntilExpration == 0)
+{
+    Console.WriteLine("Your subscription has expired.");
+}
 
+else if (daysUntilExpration == 1)
+{
+    Console.WriteLine("Your subscription expires within a day!");
+    discountPercentage = 20;
+    //Console.WriteLine($"Renew now and save {discountPercentage}%!");
+}
 
+else if (daysUntilExpration <= 5)
+{
+    Console.WriteLine($"Your subscription expires in {daysUntilExpration} days.");
+    discountPercentage = 10;
+    //Console.WriteLine($"Renew now and save {discountPercentage}%!");
+}
+
+else if (daysUntilExpration <= 10)
+{
+    Console.WriteLine("Your subscription will expire soon. Renew now!");
+}
+if (discountPercentage > 0)
+{
+    Console.WriteLine($"Renew now and save {discountPercentage}%!");
+}
+
+string[] fraudulentOrderIDs = new string[3];
+// declarar uma nova matriz de cadeias de caracteres para conter três elementos
+// O conjunto de colchetes [] indica ao compilador que a variável de nome fraudulentOrderIDs será uma matriz
+// O número 3 dentro do colchetes contém o número de elementos que a matriz conterá.
+
+fraudulentOrderIDs[0] = "A123";
+fraudulentOrderIDs[1] = "B456";
+fraudulentOrderIDs[2] = "C789";
+//fraudulentOrderIDs[3] = "D000";
+
+Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
+
+fraudulentOrderIDs[0] = "F000";
+Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+
+string [] fraudulentOrderIDDs = {"Jamile", "Linda", "Bob", "Pretinha"};
+
+Console.WriteLine(fraudulentOrderIDDs[0]);
+Console.WriteLine(fraudulentOrderIDDs[1]);
+Console.WriteLine(fraudulentOrderIDDs[2]);
+
+fraudulentOrderIDDs[0] = "JBS";
+
+Console.WriteLine(fraudulentOrderIDDs[0]);
