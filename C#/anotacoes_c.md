@@ -108,3 +108,15 @@
     Oferecen diferentes maneiras de chamar o método ou diferentes tipos de dados.
 
 - IntelliSense - fornece dicas e informações de referência breves em uma janela pop-up sob seu cursor enqunto você insere o código. (autopreenchimento);
+
+# IF
+
+- A expressão booliana é entre parênteses () --- True or False
+- Um bloco de código é definido por chaves { }
+    Ex: 
+        if (total > 14)
+        {
+            Console.WriteLine("You Win!");
+        }
+
+        

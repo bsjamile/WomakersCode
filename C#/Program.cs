@@ -297,6 +297,42 @@ largerValue = Math.Max(firstValue, secondValue);
 
 Console.WriteLine(largerValue);
 
+Random naice = new Random();
+
+int rooll10 = naice.Next(1,7);
+int rooll11 = naice.Next(1,7);
+int rooll12 = naice.Next(1,7);
+
+int total = rooll10 + rooll11 + rooll12;
+
+Console.WriteLine($"Naice rooll: {rooll10} + {rooll11} + {rooll12} = {total}");
+
+if ((rooll10 == rooll11) || (rooll11 == rooll12) || (rooll12 == rooll10))
+{
+    Console.WriteLine("You rolled doubles! +2 bonus to total!");
+    total += 2;
+}
+
+if (total > 14)
+{
+    Console.WriteLine("You Win!");
+}
+
+if (total < 15)
+{
+    Console.WriteLine("Sorry, you lose.");
+}
+
+message = "The quick brown fox jumps over the lazy dog.";
+bool result = message.Contains("dog");
+Console.WriteLine(result);
+
+if (message.Contains("fox"))
+{
+    Console.WriteLine("What does the fox say?");
+}
+
+
 
 
 
