@@ -64,3 +64,6 @@
 # Interpolação
 - Combina vários valores em uma única cadeia de caracteres literal usando um "modelo" e uma ou mais expressões de interpolação.
     Para se tornar um modelo, a cadeia de caracteres literal quando é prefixado pelo caractere $.
+
+- Sobrecarregar os operadores = o operador de adição, que é o símbolo de mais, é utilizado tanto para somar quanto para concatenar as cadeias de caracteres.
+    Considerando os tipos de dados das variáveis (ambos são ints), ele conclui que você deseja adicionar os dois valores.

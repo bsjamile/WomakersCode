@@ -177,3 +177,48 @@ Console.WriteLine($@"View English output:
     c:\Exercise\{projetoNome}\data.txt");
 Console.WriteLine($@"{russianMensagem}:
     c:\Exercise\{projetoNome}\ru-RU\data.txt");
+
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber);
+// aqui o sinal de + funciona como soma
+
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
+// aqui o sinal de + serve como compilador
+
+Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets.");
+// o compilador trata tudo como uma cadeia de caracteres e concatena tudo.
+
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets.");
+
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
+int resto = 7 % 5;
+decimal decimalQuotient = 7.0m / 5;
+decimal decimalQuootient = 7 / 5;
+int decimalQuootiient = 7 / 5;
+
+
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);
+Console.WriteLine("Resto: " + resto);
+Console.WriteLine("Descimal Quotient: " + decimalQuotient);
+
+int first = 7;
+int second = 5;
+decimal quotiient = (decimal)first / (decimal)second;
+Console.WriteLine(quotiient);
+
+Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
+Console.WriteLine("Modulus of 7 / 5: " + (7 % 5));
+// Quando o módulo é 0, isso significa que o dividendo é divisível pelo divisor.
+
+int value1 = 3 + 4 * 5;
+int value2 = (3 + 4) * 5;
+Console.WriteLine(value1);
+Console.WriteLine(value2);
