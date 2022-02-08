@@ -266,3 +266,37 @@ decimal celsius = (fahrenheit - 32m) * (5m / 9m);
 Console.WriteLine("The temperature is " + celsius + " Celsius.");
 
 Console.WriteLine(5m / 10m);
+
+Random dice = new Random();
+int roll = dice.Next(1, 7);
+//parâmetros de entrada definem o limite inferior e superior, respectivamente, para o método Next(), conforme gera um número aleatório. 
+Console.WriteLine(roll);
+
+int numbers = 7;
+string texto = "seven";
+Console.WriteLine(numbers);
+Console.WriteLine();
+Console.WriteLine(texto);
+// 3 versões sobrecarregadas do método WriteLine()
+
+Random nice = new Random();
+int roll1 = nice.Next();
+int roll2 = nice.Next(101);
+int roll3 = nice.Next(50, 101);
+
+Console.WriteLine($"First roll: {roll1}");
+Console.WriteLine($"Second roll: {roll2}");
+Console.WriteLine($"Third roll: {roll3}");
+//3 versões sobrecarregadas diferentes
+
+int firstValue = 500;
+int secondValue = 600;
+int largerValue;
+
+largerValue = Math.Max(firstValue, secondValue);
+
+Console.WriteLine(largerValue);
+
+
+
+

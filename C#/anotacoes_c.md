@@ -70,3 +70,41 @@
 - Operadores de atribuição composta =+, -=, *=, ++, --;
     O operador += é chamado especificamente de operador de atribuição de adição;
     
+# Métodos com estado (Método de Instância) vs Métodos Sem Estado (Método Estático)
+
+- O estado descreve a condição do ambiente de execução em um momento específico no tempo. Conforme seu código executa linha por linha, os valores são armazenados em variáveis. A qualquer momento durante a execução, o estado atual do aplicativo é a coleção de todos os valores armazenados na memória.
+    Os métodos com estados ou métodos de instância são criados de uma forma que dependem de valores armazenados na memória pelas linhas de código anteriores que já foram executadas. Ou eles modificam o estado do aplicativo atualizando valores ou armazenando novos valores na memória.
+    Os métodos com estado (instância) controlam seu estado em campos, que são variáveis definidas na classe.
+
+- O método sem estado ou método estático, não depende do estado atual do aplicativo para funcionar corretamente. Assim, os métodos sem estado são implementados para que possam funcionar sem referenciar ou alterar os valores já armazenados na memória. 
+    Ex: O Console.WriteLine() não depende de nenhum valor armazenado na memória. Ele executa sua função e termina sem afetar o estado do aplicativo de qualquer forma.
+
+- Uma única classe pode dar suporte a métodos com e sem estado. No entanto, quando você precisa chamar métodos com estado, deve primeiro criar uma intância da classe para que o método possa acessar o estado.
+    Uma instância de uma classe é chamada de um objeto.
+    Operador new = criar uma instância de um classe.
+
+- Um maneira de aprender a chamar o método é consultar a documentação. Você encontrará exemplos que mostram se o método deve ser chamado da instânci do objeto ou diretamente da classe.
+
+## Recapitulando
+
+- Para chamar métodos de uma classee na Biblioteca de Classe do .NET = use o formato "ClassName.MethodName()".
+
+- Ao chamar um método sem estado, não é necessário criar uma instância de sua classe primeiro.
+
+- Ao chamar um método com estado, é necessário criar uma instância da classe e acessar o método no objeto.
+    Use o operador new para criar uma instância de uma classe.
+    Uma instância de uma classe é chamada de objeto
+
+- Métodos nulos = não retornam valores quando são concluídos.
+
+- Operação = métodos criados para retornar um valor após a conclusão
+
+- O paarâmetros de entrada podem configurar como o método executa seu trabalho. Ou os parâmetros de entrada podem ser operados diretamente. 
+    Ao chamar métodos, você separa cada parâmetro de entrada com um símbolo ",".
+
+- Uma assinatura de método é o número de parâmetros de entrada definidos para cada tipo de dados e parâmetro de entrada.
+
+- Um método sobrecarregado é definido com várias assinaturas de método.
+    Oferecen diferentes maneiras de chamar o método ou diferentes tipos de dados.
+
+- IntelliSense - fornece dicas e informações de referência breves em uma janela pop-up sob seu cursor enqunto você insere o código. (autopreenchimento);
