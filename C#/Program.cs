@@ -222,3 +222,47 @@ int value1 = 3 + 4 * 5;
 int value2 = (3 + 4) * 5;
 Console.WriteLine(value1);
 Console.WriteLine(value2);
+
+int value = 0;
+value = value + 5;
+value += 5;
+//incrementa o valor, vai acrescentando
+value++;
+//incrementa mais 1
+Console.WriteLine(value);
+
+int value4 = 1;
+
+value4 = value4 + 1;
+Console.WriteLine("First increment: " + value4);
+
+value4 += 5;
+Console.WriteLine("Second inicrement: " + value4);
+
+value4++;
+Console.WriteLine("Tird increment: " + value4);
+
+value4 = value4 - 1;
+Console.WriteLine("First decrement: " + value4);
+
+value4 -= 5;
+Console.WriteLine("Second decrement: " + value4);
+
+value4--;
+Console.WriteLine("Tird decrement: " + value4);
+
+value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine("Second: " + value++);
+//recupera o valor atual e incrementa o valor
+Console.WriteLine("Third: " + value);
+//confirma que o valor foi, de fato, incrementado
+Console.WriteLine("Fourth: " + (++value));
+// Incrementa o valor e recupera o novo valor incrementado
+
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius.");
+
+Console.WriteLine(5m / 10m);
