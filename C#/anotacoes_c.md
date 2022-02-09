@@ -129,3 +129,13 @@
 # Foreach
 
 - Realiza um loop em cada elemento da matriz.
+    Itera em cada elemento de uma matriz, executando o bloco de código associado uma vez para cada elemento da matriz.
+
+# Melhores Práticas
+
+"A parte mais difícil do desenvolvimento de software é nomear as coisas". 
+    O nome de uma variável precisa não apenas seguir certas regras de sintaxe, mas também deve ser usado para tornar o código mais legível e compreensível.
+- Escolher nome descritivo para variáveis que descrevem sua finalidade e intençãoo;
+- Usar comentários de código para instruir temporariamente o compilador a ignorar linhas de código;
+- Usar comentários de código para descrever uma finalidade ou requisitos de nível superior para uma passagem de código;
+- Escrever código que use espaço em branco de modo eficaz para transmitir a relação de linhas de código.
