@@ -401,10 +401,32 @@ Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
 
 string [] fraudulentOrderIDDs = {"Jamile", "Linda", "Bob", "Pretinha"};
 
-Console.WriteLine(fraudulentOrderIDDs[0]);
-Console.WriteLine(fraudulentOrderIDDs[1]);
-Console.WriteLine(fraudulentOrderIDDs[2]);
+Console.WriteLine($"First: {fraudulentOrderIDDs[0]}");
+Console.WriteLine($"Second: {fraudulentOrderIDDs[1]}");
+Console.WriteLine($"Third: {fraudulentOrderIDDs[2]}");
+Console.WriteLine($"Fourth: {fraudulentOrderIDDs[3]}");
 
 fraudulentOrderIDDs[0] = "JBS";
 
-Console.WriteLine(fraudulentOrderIDDs[0]);
+Console.WriteLine($"Reassign First: {fraudulentOrderIDDs[0]}");
+
+Console.WriteLine($"There are {fraudulentOrderIDDs.Length} fraudulent orders to process.");
+
+//Foreach
+
+string[] names = {"Bobz", "Conrad", "Grant"};
+foreach (string name in names)
+//realiz o loop dentro da matriz
+// a variável name é uma variável temporária para facilitar o acesso dentro do bloco de código
+{
+    Console.WriteLine(name);
+}
+
+int [] inventory = {200, 450, 700, 175, 250};
+int summ = 0;
+foreach(int items in inventory)
+{
+    summ += items;
+}
+
+Console.WriteLine($"O inventário contém {summ} produtos ao total.");

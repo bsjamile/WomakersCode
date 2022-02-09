@@ -123,3 +123,9 @@
 
 - Uma matriz é uma sequência de elementos de dados individuais que pode ser acessada por meio de um único nome de variável
     Os elementos de uma matriz são como qualquer outro valor de variável, de modo que você pode atribuir, recuperar e reatribuir um valor a cada elemento da matriz.
+    A propriedade Length é uma maneira programática de determinar o número de elementos em uma matriz.
+        Ex: Console.WriteLine($"There are {fraudulentOrderIDDs.Length} fraudulent orders to process.");
+
+# Foreach
+
+- Realiza um loop em cada elemento da matriz.
