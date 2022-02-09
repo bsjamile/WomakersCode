@@ -139,3 +139,37 @@
 - Usar comentários de código para instruir temporariamente o compilador a ignorar linhas de código;
 - Usar comentários de código para descrever uma finalidade ou requisitos de nível superior para uma passagem de código;
 - Escrever código que use espaço em branco de modo eficaz para transmitir a relação de linhas de código.
+
+    - Convenção = camel case - letra minúscula no início da primeira palavra e uma letra maiúscula no início de cada palavra subsequente. Ex: string thisIsCamelCase;
+    - Escolher um nome para a variável que represente o tipo de dados que ela manterá;
+    - O nome da variável deve ser uma ou mais palavras inteira unidas. Não usar contrações (nem todo mundo pode entender);
+    - Nomes de variável não devem incluir o tipo de dados da variável. Ex: string strMyValue;
+
+    O exemplo string firstName; segue todas essas regras e convenções, supondo que seja uma variável para armazenar dados que representem o nome de uma pessoa.
+    
+    Exemplos de nome variáveis:
+        char userOption;
+        int gameScore;
+        float particlesPerMillion;
+        bool processedCustomer;
+
+    # Variáveis Locais
+
+    O escopo está dentro do corpo de um método. 
+    Embora esteja trabalhando no VS Code, está na verdade escrevendo código dentro de um método.
+    Classe, métodos têm as mesmas convenções de nomenclatura. 
+        O camel case faz parte de uma convenção faz parte de uma estrutura de nomenclatura maior.
+
+    Comentários
+    Para que serve?
+
+    - Usar o TODO para lembrar de examinar uma determinada passagem;
+    - As vezes os desenvolvedores atualizam o código mas esquecem de atualizar os comentários. 
+    - Então, é melhor usar comentários para ideias de nível superior e não adicionar comentários sobre como uma linha de código individual funciona.
+    - Comentários de várias linhas = /* Oioioi */
+    - Os comentários precisam fornecer um conexto para o problema que está sendo resolvido pelo código. Deixar claro a finalizadade do código, qual o problema ele está resolvendo, como ele se relaciona com o sistema maior.
+
+    # Espaço em Branco ou espaços negativos
+        espaços individuais produzidos pelo space bar, tab ou enter;
+        - O espaço em branco, quando usado corretamente, pode aumentar sua capacidade de ler e compreender o código.
+

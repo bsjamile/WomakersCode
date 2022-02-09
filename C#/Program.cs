@@ -399,7 +399,7 @@ Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
 fraudulentOrderIDs[0] = "F000";
 Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
 
-string [] fraudulentOrderIDDs = {"Jamile", "Linda", "Bob", "Pretinha"};
+string[] fraudulentOrderIDDs = { "Jamile", "Linda", "Bob", "Pretinha" };
 
 Console.WriteLine($"First: {fraudulentOrderIDDs[0]}");
 Console.WriteLine($"Second: {fraudulentOrderIDDs[1]}");
@@ -414,7 +414,7 @@ Console.WriteLine($"There are {fraudulentOrderIDDs.Length} fraudulent orders to 
 
 //Foreach
 
-string[] names = {"Bobz", "Conrad", "Grant"};
+string[] names = { "Bobz", "Conrad", "Grant" };
 foreach (string name in names)
 //realiz o loop dentro da matriz
 // a variável name é uma variável temporária para facilitar o acesso dentro do bloco de código
@@ -422,10 +422,10 @@ foreach (string name in names)
     Console.WriteLine(name);
 }
 
-int [] inventory = {200, 450, 700, 175, 250};
+int[] inventory = { 200, 450, 700, 175, 250 };
 int summ = 0;
 int bin = 0;
-foreach(int items in inventory)
+foreach (int items in inventory)
 {
     summ += items;
     bin++;
@@ -435,7 +435,7 @@ foreach(int items in inventory)
 
 Console.WriteLine($"O inventário contém {summ} produtos ao total.");
 
-string [] orderIDs = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"};
+string[] orderIDs = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
 foreach (string orderID in orderIDs)
 {
     if (orderID.StartsWith("B"))
@@ -443,3 +443,26 @@ foreach (string orderID in orderIDs)
         Console.WriteLine($"{orderID}");
     }
 }
+
+// This is a code comment!
+
+/*
+string named = "JBarrosinho";
+int widgetsPurchased = 7;
+Console.WriteLine($"{named} sold {widgetsPurchased} widgets.");
+*/
+
+/*
+
+*/
+
+// Example 1 - Espaços em branco são ignorados pelo compilador do C#
+Console
+.
+WriteLine
+(
+    "Hello World!"
+);
+
+// Example 2
+string firstWoord="Hello";string laastWord="World";Console.WriteLine(firstWoord+" "+laastWord+"!");
