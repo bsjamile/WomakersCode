@@ -172,4 +172,7 @@
     # Espaço em Branco ou espaços negativos
         espaços individuais produzidos pelo space bar, tab ou enter;
         - O espaço em branco, quando usado corretamente, pode aumentar sua capacidade de ler e compreender o código.
+        - Concentrar na legibilidade do código que escreve
+        - Se uma única linha de código se tornar longa, você poderá dividi-la.
+            No entanto, deve evitar dividir uma única instrução arbitrariamente em vára linhas até ter um bom motivo para fazer isso.
 

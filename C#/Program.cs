@@ -349,30 +349,28 @@ if (message.Contains("fox"))
     Console.WriteLine("What does the fox say?");
 }
 
+ // Usando espaçamento correto
 Random random = new Random();
+
 int daysUntilExpration = random.Next(12);
 int discountPercentage = 0;
-
 
 if (daysUntilExpration == 0)
 {
     Console.WriteLine("Your subscription has expired.");
 }
-
 else if (daysUntilExpration == 1)
 {
     Console.WriteLine("Your subscription expires within a day!");
     discountPercentage = 20;
     //Console.WriteLine($"Renew now and save {discountPercentage}%!");
 }
-
 else if (daysUntilExpration <= 5)
 {
     Console.WriteLine($"Your subscription expires in {daysUntilExpration} days.");
     discountPercentage = 10;
     //Console.WriteLine($"Renew now and save {discountPercentage}%!");
 }
-
 else if (daysUntilExpration <= 10)
 {
     Console.WriteLine("Your subscription will expire soon. Renew now!");
@@ -380,7 +378,7 @@ else if (daysUntilExpration <= 10)
 if (discountPercentage > 0)
 {
     Console.WriteLine($"Renew now and save {discountPercentage}%!");
-}
+}//Fim
 
 string[] fraudulentOrderIDs = new string[3];
 // declarar uma nova matriz de cadeias de caracteres para conter três elementos
